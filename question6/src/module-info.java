@@ -5,5 +5,5 @@
  * @author shakambhari
  *
  */
-module question8 {
+module question6 {
 }
