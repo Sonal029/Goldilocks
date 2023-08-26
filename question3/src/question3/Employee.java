@@ -4,7 +4,19 @@ package question3;
 
 public class Employee {
 	
-	
+	private int empId;
+	public Employee(int empId, String empName, int age) {
+		super();
+		this.empId = empId;
+		this.empName = empName;
+		this.age = age;
+	}
+	public int getEmpId() {
+		return empId;
+	}
+	public void setEmpId(int empId) {
+		this.empId = empId;
+	}
 	private String empName;
 	private int age;
 	public String getEmpName() {

@@ -41,12 +41,21 @@ public class Main {
 		ResultSet rs = ps.executeQuery();
 		while(rs.next())
 		{
-			empList.add(new Employee(rs.getString(1),rs.getInt(2)));
+			empList.add(new Employee(rs.getString(2),rs.getInt(3)));
 		}
 		
 		conn.close();
         
 		return empList;		
 		
+	}
+	
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+		
+		List<Employee> emp = getEmployeeList();
+		for(Employee e : emp)
+		{
+			System.out.println(e.getEmpName() + " : "+e.getAge());
+		}
 	}
 }
