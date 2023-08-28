@@ -1,0 +1,8 @@
+Problem Statement:
+Write a program to call a HTTP URL and print the output
+a. URL is http://127.0.0.1:8999/test?value=p
+
+Time taken: 20minutes
+
+Explaination:
+To solve this I first created a spring project in which I added the dependencies and created a bean of RestTemplate, In the controller, I created an object of it and called the method getObjectOf(), by passing url and reteriving a data in String form.
