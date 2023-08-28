@@ -1,0 +1,13 @@
+Question Statement:
+Write a HTTP server program that take the print the received value read
+from the DB as per Q3
+
+Time Taken: 35minutes
+
+Explaination:
+I have created a spring project, added required dependencies.
+To the application.properties I have given all the required database credentials.
+I created an Employee entity with the name test, also created an Interface which is extending JPA repository.
+To the controller I created an end point:
+("/employees")
+which will help in retrieving the list of employees.
