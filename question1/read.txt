@@ -1,0 +1,12 @@
+Question Statement:
+Write a function to convert a decimal number string into binary string.
+For example, string A contains “123” which is decimal value 123. Convert
+this string into binary string.
+
+
+Time taken: 20minutes
+
+
+Explaination: 
+To solve this I first converted the string into a character array and then found out the ascii value of every character, by substracting the ascii value of every character with the ascii value of 0,I got the decimal value of every digit.
+Then for converting it into a binary number I tried finding the remainder of the number by dividing it with 2; and to the string buider I added every remainder in the first position.
