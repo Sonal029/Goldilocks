@@ -1,0 +1,12 @@
+Question Statement:
+Write a program to store the value in Hashmap (key, store) and then
+search those given value from the hashmap and print it.
+a. Name is key and age is value so store some sample values like 
+i. (Ram, 36), (shyam,60)
+
+Time Taken: 15minutes
+
+Explaination:
+
+I created a HashMap<String, Integer> added a few values to it using the put method and then I asked the user to provide the name he is looking for, if it is present in the hashmap I am returning the name with his age and if it is not present then I am returning that the Name is not present.
+ 
