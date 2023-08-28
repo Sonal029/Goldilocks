@@ -1,0 +1,18 @@
+Question statement:
+
+Write a program to read value from the DB. The SB scheme is as follows:
+a. Username: root
+b. Password: root
+c. Table name: test
+d. Schema
+i. Emp name varchar 200
+ii. Emp age int 10
+
+
+Time Taken: 35 minutes
+
+Explaination:
+
+To solve this, I first created an Employee class which consist of fields the employee object will be having. Then , I created a connection with the database.
+Also I added a jar file to the project in lib folder and built a path to it.
+Then using sql query and prepared statement I fetched the data from the database.
