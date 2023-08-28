@@ -1,0 +1,8 @@
+Question Statement:
+Write a program that take the command line input and print all received
+inputs
+
+Time taken: 5minutes
+
+Explanation:
+I created a java program, in the main method I have used a for-loop to iterate over the string[] args and have printed all the elements.
