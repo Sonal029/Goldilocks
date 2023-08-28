@@ -1,0 +1,12 @@
+Question Statement:
+Write a program to read a CSV file and print the same in the output file.This csv file contains three columns having numeric value. The output file should additionally contain the sum of these numeric values.
+
+
+Time taken: 30Mins
+
+
+Explaination:
+
+To solve this problem I first created a txt file which had comma seperated values, Using buffered Reader, I read all the lines and using buffered writer I tried writing the values in the "write.txt" file.
+While reading every value I also added up the values in a varible sum and at lat appended the value to the write file at the end.
+I also checked for exception if he code throws any.
