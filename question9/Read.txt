@@ -4,9 +4,3 @@ input and validate allow the user to be authenticated and if user
 credential is ok, then print success else failure.
 
 Time Taken: 1 hour
-
-Explaination:
-I created an Index.html file which consist of a form having @ input boxes for username and password respectively and a buton to login in.
-
-In the script part I have created an object with login Id as the key and password as the value.Then I am getting the value entered by the user and checking it if it matches with any of the key present in the obj if it matches then I check for its respective password if it is correct then it generates an alert that the user is allowed to login if the password is wrong it generates alert "wrong password"
-If username doesnot exist then it gives alert "invaid username"

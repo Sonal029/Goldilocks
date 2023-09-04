@@ -1,4 +1,4 @@
-package com.q4.controller;
+package com.example.demo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -6,12 +6,11 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 @RestController
-public class TestController {
-
+public class Question4Controller {
+	
 	
 	@Autowired
 	private RestTemplate restTemplate;
-	
 	
 	@GetMapping("/test")
 	public String getResponse()
@@ -21,5 +20,5 @@ public class TestController {
 		String ans = restTemplate.getForObject(url, String.class);
 		return ans;
 	}
-	
+
 }

@@ -1,27 +1,39 @@
-let obj={
-  "goldi":"12345",
-  "qwerty":"98765",
-  "masai":"78956"
+function showLoginForm() {
+  const registerContainer = document.querySelector(".register-form");
+  const loginContainer = document.querySelector(".login-form");
+
+  registerContainer.style.display = "none";
+  loginContainer.style.display = "block";
+}
+function showRegisterForm() {
+  const registerContainer = document.querySelector(".register-form");
+  const loginContainer = document.querySelector(".login-form");
+
+  registerContainer.style.display = "block";
+  loginContainer.style.display = "none";
 }
 
-let username= document.getElementsById("username").value;
-let password= document.getElementsById("password").value;
 
-for(let key in obj)
-{
-    if(k==username)
-    {
-       if(obj[key]=password)
-       {
-        alert("Login successful");
-       }
-       else
-       {
-        alert("Incorrect password");
-       }
-    }
-    else{
-        alert("Invalid Username");
-    }
-    
-}
+  const users = [];
+
+  function register() {
+      const regUsername = document.getElementById("regUsername").value;
+      const regPassword = document.getElementById("regPassword").value;
+
+      users.push({ username: regUsername, password: regPassword });
+
+      alert("Registration successful. You can now log in.");
+  }
+
+  function login() {
+      const loginUsername = document.getElementById("loginUsername").value;
+      const loginPassword = document.getElementById("loginPassword").value;
+
+      const user = users.find(u => u.username === loginUsername && u.password === loginPassword);
+
+      if (user) {
+          alert("Login successful. Welcome, " + loginUsername + "!");
+      } else {
+          alert("Login failed. Please check your credentials.");
+      }
+  }
